@@ -1,0 +1,463 @@
+html {overflow-x: hidden;}
+@font-face {
+	font-family: 'Gotham-Bold'; 
+	src: url(fonts/14006.otf); 
+}
+@font-face {
+	font-family: 'RotisSansSerif'; 
+	src: url(fonts/RotisSansSerifW1G-Bold.otf); 
+}
+@font-face {
+	font-family: 'Museo-500'; 
+	src: url(fonts/museo-500.otf); 
+}
+@font-face {
+	font-family: 'Museo-700'; 
+	src: url(fonts/Museo700.otf); 
+}
+.header {
+    padding-top: 20px;
+    height: 112px;
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slogan {
+    font-family: 'Gotham-Bold';
+    color: white;
+    float: left;
+    padding-top: 45px;
+    text-align: right;
+}
+.slogan h6{
+    font-family: 'RotisSansSerif';
+}
+h1,h6{
+    margin: 5px;
+}
+.ad {
+    font-family: 'Gotham-Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 86px;
+    width: 726px;
+    float: right;
+}
+.telo{
+    margin-left: auto;
+    margin-right: auto;
+    height: 1330px;
+    max-width: 980px;
+    background-color: white;
+}
+body {
+    background-image: url(source/fon.png);
+    background-repeat: no-repeat;
+    background-color: #333333;
+}
+.panel {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    height: 30px;
+    width: 100%;
+    background-color: #002137;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.knopki {
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.auth {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+bt1 {
+    margin: 10px;
+    transition: all 1s;
+}
+bt1:hover{
+    margin: 20px;
+    background-color: blue;
+    transition: all 1s;
+}
+.niga {
+    float: left;
+    padding-left: 10px;
+    margin-top: 10px;
+    height: 320px;
+    max-width: 659px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.opisanie {
+    height: 320px;
+    width: 180px;
+    transform: translateX(-180px);
+}
+.polz{
+    width: 20px;
+    height: 20px;
+    transform: translate(-10px,-290px) rotate(45deg);
+    background-color: rgb(51, 82, 255);
+}
+.el{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    background-color: black;
+    width: 180px;
+    height: 79px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid white;
+}
+.el3{
+    border-bottom: none;
+}
+.el span:first-of-type{
+    color: rgb(0, 140, 255);
+    margin-top: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.el span:last-of-type{
+    color: white;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+.el0{
+    background-color: rgb(51, 82, 255);
+}
+.el1:hover ~ .polz{
+    transform: translate(-10px,-210px) rotate(45deg);
+    background-color: black;
+}
+.el2:hover ~ .polz{
+    transform: translate(-10px,-130px) rotate(45deg);
+    background-color: black;
+}
+.el3:hover ~ .polz{
+    transform: translate(-10px,-50px) rotate(45deg);
+    background-color: black;
+}
+.bounce{
+    padding-right: 10px;
+    padding-left: 10px;
+    float: right;
+    height: 320px;
+    max-width: 290px;
+}
+.bounce h4{
+    color: rgb(255, 102, 0);
+    margin-top: 14px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    font-family: 'Museo-500';
+    font-size: 14px;
+}
+.bounce h2{
+    margin-bottom: 14px;
+    font-family: 'Museo-700';
+    font-size: 22px;
+}
+.bo {
+    display: flex;
+}
+.bounce img{
+    height: 38px;
+    width: 34px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 16px;
+}
+.sv1, .sv2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+.sv2 span:first-of-type{
+    font-weight: bold;
+}
+.sv2 span{
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 38px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+.reg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(255, 123, 0);
+    border-radius: 20px;
+    max-width: 150px;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    
+}
+.reg:hover{
+    background-color: rgb(255, 60, 0);
+}
+.reg img {
+    height: 22px;
+    width: 22px;
+}
+.blog{
+    
+    float: left;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    width: 659px;
+    height: 460px;
+}
+.pre{
+    font-family: 'Museo-500';
+    font-size: 12pt;
+}
+.blog .pre img{
+    width: 35px;
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 5px;
+    float: left;
+    margin-left: 0;
+}
+.post{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    background: linear-gradient(0deg, #fff, rgb(230, 230, 230));
+    height: 104px;
+    border-top: 1px solid rgb(134, 134, 134);
+}
+.post div:last-of-type>a{
+    font-size: 12pt;
+}
+.post div:last-of-type>span{
+    font-size: 10pt;
+}
+.post>div:last-of-type{
+    padding-left: 10px;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+}
+.post img{
+    padding: 15px;
+}
+.post span{
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+.post span:last-of-type{
+    font-style: italic;
+}
+.activ{
+    padding-right: 10px;
+    padding-left: 10px;
+    float: right;
+    height: 485px;
+    width: 290px;
+}
+.activ .all{
+    float: right;
+}
+.activ .all a{
+    float: right;
+    font-size: 10pt;
+}
+.all img{
+    padding-right: 5px;
+}
+.activ .pre>img{
+    width: 36px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 15px;
+    float: left;
+}
+.activ .pre h2 div{
+    margin-left: 10px;
+}
+.activ .pre h2{
+    display: flex;
+    padding-top: 5px;
+    margin-bottom: 13px;
+}
+h2 {
+    margin-bottom: 18px;
+    margin-top: 18px;
+}
+.cl2{
+    margin-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cl1, .cl2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    font-size: 8pt;
+}
+.cl2 span{
+    margin-top: 7px;
+    margin-bottom: 6px;
+    margin-left: 15px;
+}
+.cl1 img{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}
+.cl2 span{
+    height: 20px;
+}
+.fl{
+    display: flex;
+    border-top: 1px solid rgb(134, 134, 134);
+    background: linear-gradient(0deg, #fff, rgb(230, 230, 230));
+}
+.images{
+    border-top: 1px solid rgb(134, 134, 134);
+    background: linear-gradient(0deg, #fff, rgb(230, 230, 230));
+    padding-top: 15px;
+}
+.images img{
+ height: 50px;
+ width: 50px;
+ margin-left: 15px;
+ margin-bottom: 15px;
+}
+footer{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: space-around;
+    height: 222px;
+    max-width: 978px;
+    background-color:rgb(178, 178, 178);
+}
+footer a{
+    color: rgb(61, 61, 61);
+    margin-bottom: 10px;
+}
+.fot a{
+    font-size: 10pt;
+}
+.fot>div{
+    display: flex;
+}
+.fot>div>div{
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 27px;
+    height: 27px;
+}
+footer .fot{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    padding-left: 36px;
+    color: rgb(61, 61, 61);
+}
+.fot h3{
+    font-family: 'Museo-500';
+}
+footer .fot a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+}
+.about{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 8pt;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(61, 61, 61);
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+.about span{
+    padding-bottom: 10px;
+}
+.activ:last-of-type{
+    height: 364px;
+}
+@media (max-width:995px) {
+    
+    .telo{
+        height: 2500px;
+    }
+    .header{
+        height: 170px;
+    }
+    .slogan {
+        padding-top: 15px;
+    }
+}
+    /* только для устройств с малым размером экрана */
+    @media (max-width:686px) {
+    .telo{
+        height: 2730px;
+    }
+    .niga img{
+        max-width: 99%;
+    }
+    .blog, .post ,.pre, .ad{
+        max-width: 98%;
+    }
+    .blog{
+        height: 580px;
+    }
+    .post{
+        height: 134px;
+    }
+    footer{
+        flex-direction: column;
+        height: 810px;
+    }
+    .knopki{
+        flex-direction: column;
+        height: 40px;
+        overflow: hidden;
+        transition: all 0.8s;
+    }
+    .knopki:hover{
+        flex-direction: column;
+        height: 250px;
+        background-color: black;
+        transform: translateY(110px);
+        transition: all 0.8s;
+    }
+    bt1 {
+        margin: 10px;
+        transition: all 0.4s;
+    }
+    bt1:hover{
+        margin: 10px;
+        background-color: blue;
+        transition: all 1s;
+    }
+}
