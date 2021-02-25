@@ -120,6 +120,7 @@ bt1:hover{
 .slide{
     position: absolute;
     display: flex;
+    flex-direction: row;
     animation: move 10s infinite ease-in-out;
 }
 .slide img:nth-of-type(2){
@@ -531,4 +532,4 @@ footer .fot a{
         background-color: blue;
         transition: all 1s;
     }
-} 
+}
