@@ -63,10 +63,11 @@ body {
     font-size: 10pt;
     height: 30px;
     width: 100%;
-    background-color: #002137;
+    background: linear-gradient(0deg, rgb(11, 47, 69), rgb(51, 81, 100));
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 .knopki {
     color: white;
@@ -81,11 +82,21 @@ body {
     align-items: center;
 }
 bt1 {
-    margin: 10px;
+    margin: 12px;
+    font-size: 11px;
     transition: all 1s;
 }
+.knopki div, .auth div{
+width: 1px;
+height: 30px;
+background-color: rgb(17, 43, 58);
+}
+bt1 a{
+    color: #fff;
+    text-decoration: none;
+}
 bt1:hover{
-    margin: 20px;
+    margin: 16px;
     background-color: blue;
     transition: all 1s;
 }
@@ -98,12 +109,55 @@ bt1:hover{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    height: 320px;
+    max-width: 659px;
+    overflow: hidden;
 }
-
+.okno{
+    overflow: hidden;
+    position:relative;
+}
+.slide{
+    position: absolute;
+    display: flex;
+    animation: move 10s infinite ease-in-out;
+}
+.slide img:nth-of-type(2){
+    transform: scale(1, -1);
+}
+.slide img:last-of-type{
+    transform: scale(-1, 1);
+}
+@keyframes move{
+    from {
+        left: 0;
+      }
+      10% {
+        left: 0;
+      }
+      30% {
+        left: -150%;
+      }
+      40% {
+        left: -150%;
+      }
+      60% {
+        left: -300%;
+      }
+      70% {
+        left: -300%;
+      }
+      80% {
+        left: -300%;
+      }
+      to {
+        left: 0;
+      }
+}
 .opisanie {
+    float:right;
     height: 320px;
     width: 180px;
-    transform: translateX(-180px);
 }
 .polz{
     width: 20px;
@@ -154,6 +208,7 @@ bt1:hover{
 .bounce{
     padding-right: 10px;
     padding-left: 10px;
+    padding-top: 4px;
     float: right;
     height: 320px;
     max-width: 290px;
@@ -213,7 +268,6 @@ bt1:hover{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     font-size: 12px;
-    
 }
 .reg:hover{
     background-color: rgb(255, 60, 0);
@@ -223,7 +277,6 @@ bt1:hover{
     width: 22px;
 }
 .blog{
-    
     float: left;
     display: flex;
     flex-direction: column;
@@ -234,7 +287,7 @@ bt1:hover{
 }
 .pre{
     font-family: 'Museo-500';
-    font-size: 12pt;
+    font-size: 12px;
 }
 .blog .pre img{
     width: 35px;
@@ -244,6 +297,9 @@ bt1:hover{
     float: left;
     margin-left: 0;
 }
+a {
+    color: rgb(64, 139, 224);
+}
 .post{
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
@@ -252,10 +308,10 @@ bt1:hover{
     border-top: 1px solid rgb(134, 134, 134);
 }
 .post div:last-of-type>a{
-    font-size: 12pt;
+    font-size: 17px;
 }
 .post div:last-of-type>span{
-    font-size: 10pt;
+    font-size: 14px;
 }
 .post>div:last-of-type{
     padding-left: 10px;
@@ -293,7 +349,6 @@ bt1:hover{
 .activ .pre>img{
     width: 36px;
     padding-left: 5px;
-    padding-bottom: 5px;
     padding-right: 15px;
     float: left;
 }
@@ -356,7 +411,7 @@ footer{
     align-content: space-around;
     height: 222px;
     max-width: 978px;
-    background-color:rgb(178, 178, 178);
+    background-color:rgb(210, 210, 210);
 }
 footer a{
     color: rgb(61, 61, 61);
@@ -406,15 +461,23 @@ footer .fot a{
     height: 364px;
 }
 @media (max-width:995px) {
-    
     .telo{
         height: 2500px;
+        display: flex;
+        flex-direction: column;
     }
     .header{
         height: 170px;
+        padding-top: 0;
     }
     .slogan {
         padding-top: 15px;
+    }
+    .bounce ,.activ{
+        float: left;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
     /* только для устройств с малым размером экрана */
@@ -422,11 +485,14 @@ footer .fot a{
     .telo{
         height: 2730px;
     }
-    .niga img{
-        max-width: 99%;
+    .niga .okno{
+        max-width: 100%;
     }
-    .blog, .post ,.pre, .ad{
+    .blog, .post ,.pre{
         max-width: 98%;
+    }
+    .ad{
+        max-width: 100%;
     }
     .blog{
         height: 580px;
@@ -436,24 +502,29 @@ footer .fot a{
     }
     footer{
         flex-direction: column;
-        height: 810px;
+        height: 780px;
     }
     .knopki{
         flex-direction: column;
-        height: 40px;
+        height: 34px;
         overflow: hidden;
-        transition: all 0.8s;
+        transition: all 0.7s;
     }
     .knopki:hover{
         flex-direction: column;
-        height: 250px;
+        height: 220px;
         background-color: black;
-        transform: translateY(110px);
-        transition: all 0.8s;
+        transform: translateY(96px);
+        transition: all 0.7s;
     }
     bt1 {
         margin: 10px;
         transition: all 0.4s;
+    }
+    .knopki div{
+        width: 50px;
+        height: 1px;
+        background-color: white;
     }
     bt1:hover{
         margin: 10px;
