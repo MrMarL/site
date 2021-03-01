@@ -109,8 +109,6 @@ bt1:hover{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    height: 320px;
-    max-width: 659px;
     overflow: hidden;
 }
 .okno{
@@ -120,7 +118,6 @@ bt1:hover{
 .slide{
     position: absolute;
     display: flex;
-    flex-direction: row;
     animation: move 10s infinite ease-in-out;
 }
 .slide img:nth-of-type(2){
@@ -487,7 +484,14 @@ footer .fot a{
         height: 2730px;
     }
     .niga .okno{
-        max-width: 100%;
+        width: 100%;
+    }
+    .slide{
+        width: 100%;
+    }
+    .niga .okno img{
+        width: 136%;
+        height: 319px;
     }
     .blog, .post ,.pre{
         max-width: 98%;
